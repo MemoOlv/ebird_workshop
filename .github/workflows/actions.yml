@@ -1,0 +1,22 @@
+name: Tests
+on: push
+jobs:
+  actions:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copia repositorio
+      uses: actions/checkout@main
+    - name: Construye imagen
+      run: docker build --tag islasgeci .
+    - name: Verifica el formato
+      run: docker run islasgeci make check
+    - name: Corre pruebas y evalúa cobertura
+      run: docker run islasgeci make coverage
+    - name: Corre mutation testing
+      run: docker run islasgeci make mutants
+    - name: Create/Update tag
+      uses: rickstaa/action-create-tag@v1.5.4
+      with:
+        tag: "latest"
+        message: "Latest release"
+        force_push_tag: true

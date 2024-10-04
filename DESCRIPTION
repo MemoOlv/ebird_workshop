@@ -1,4 +1,4 @@
-Package: templater
+Package: ebird.workshop
 Title: Template for R projects
 Authors@R: c(
     person(given = "Ciencia de Datos",

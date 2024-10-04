@@ -8,11 +8,3 @@ parameter](https://github.com/IslasGECI/ebird_workshop/actions/workflows/actions
 ![languages](https://img.shields.io/github/languages/top/IslasGECI/ebird_workshop)
 ![commits](https://img.shields.io/github/commit-activity/y/IslasGECI/ebird_workshop)
 ![R-version](https://img.shields.io/github/r-package/v/IslasGECI/ebird_workshop)
-
-## Step to use
-- Rename links in `README`.
-- Rename image name in `docker-compose.yml`.
-- Rename package name in `DESCRIPTION`.
-- Rename image names in `actions.yml`.
-- Rename package name on install recipe in `Makefile`.
-- Rename package name in `teststhat.R`, `coverage.R` and `test_nothing.R`

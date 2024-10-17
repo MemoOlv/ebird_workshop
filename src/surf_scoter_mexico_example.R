@@ -25,5 +25,4 @@ mexico_buffer <- st_buffer(mexico, dist = 5000)
 correct_proportion <- extract(abd_nonbreeding, mexico_buffer, fun = "sum", na.rm = TRUE,
         touches = TRUE)
 
-print(correct_proportion
-)
+print(correct_proportion)
